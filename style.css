@@ -97,6 +97,6 @@ footer a {
   flex-direction: column-reverse;
   border: 2px, dashed black;
   width: fit-content;
-  padding: 21px;
+  padding: 20px;
   margin: 2px;
 }
