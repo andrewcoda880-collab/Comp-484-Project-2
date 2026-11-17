@@ -60,6 +60,7 @@ function checkAndUpdatePetInfoInHtml() {
   updatePetInfoInHtml();
 }
 
+
 function checkFieldsBeforeUpdating() {
   // Add conditional if weight is lower than 1 or over 100.
   if (pet_info.weight <= 1) {
@@ -99,7 +100,7 @@ function checkFieldsBeforeUpdating() {
   }
 }
 
-// Updates your HTML with the current values in your pet_info object
+// Updates HTML with the current values in pet_info object
 function updatePetInfoInHtml() {
   $('.name').text(pet_info['name']);
   $('.weight').text(pet_info['weight']);
@@ -119,7 +120,7 @@ function updatePetInfoInHtml() {
   $('.exercise-button').toggle(hasEnergy && notHungry && notSad);
 }
 
-
+//add text to log based on which function is pressed
 function addTextToLog(text) {
   $('.activity-log').append('<li>' + text + '</li>');
 }
